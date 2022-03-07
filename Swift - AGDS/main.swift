@@ -7,5 +7,22 @@
 
 import Foundation
 
-print("Hello, World!")
+//print(factorial(n: 5))
+//
+//print(isPalindrome("madam"))
+//print(isPalindrome("esperanza"))
+//
+//printBinary(52)
+//print()
+//printBinary(42)
+//print()
+//
+//reverseLines(0)
+//printBinaryExhaustive(4)
+//printDecimal(3)
+//print(evaluate("((3+4)+((2*9)*5))"))
+//permutation("park")
+//permutationUnique("hellp")
+
+combinations("help", 3)
 
