@@ -98,86 +98,30 @@ func printPermutationUniqueHelper(_ word: String, soFar: String = "", set: inout
 }
 
 func combinations(_ word: String, _ k: Int) {
-  combinationsHelper(word, k)
-  
+  var set = Set<Character>()
+  var result = Set<String>()
+  combinationsHelper(word, k, &set, "", &result)
+  print(result)
 }
 
-func combinationsHelper(_ word: String, _ k: Int = 0, soFar: String = "", indent: String = "") {
-  
-  var set = Set<String>()
-  
-  for character in word {
-    set.insert(String(character))
-//    print("set: \(set)")
-  }
-
-  let a = set.shuffled().prefix(k)
-//  print("a: \(a)")
-  let b = "\(a.joined(separator: ""))"
-//  print(b)
-  
-  
-  if b.count == 0 {
-    print("soFar: \(soFar)")
+func combinationsHelper(_ word: String, _ k: Int, _ unique: inout Set<Character>,
+                        _ soFar: String, _ result: inout Set<String>, indent: String = "") {
+  print("\(indent)permutation(word: \(word), soFar: \(soFar))")
+  // base case
+  if k == 0 {
+    result.insert(soFar)
   } else {
-      for i in 0..<b.count {
-//      print(b)
-//      print(b.count)
-      let c = b[i]
-      print(c)
-//      print(b[0, i])
-//      print(b[i + 1, b.count])
-      combinationsHelper2(b[0, i] + b[i + 1, b.count], soFar: soFar + c)
-      print(soFar + c)
-
+    for i in word {
+      if !unique.contains(i) {
+        unique.insert(i)
+//        print("Before: \(unique)")
+        combinationsHelper(word, k - 1, &unique, soFar + String(i), &result, indent: indent + "  ")
+        unique.remove(i)
+        print("After: \(unique)")
       }
-    func combinationsHelper2(_ word: String, _ k: Int = 0, soFar: String = "", indent: String = "") {
-      combinationsHelper(b)
     }
   }
 }
 
 
-//func getPathCrawlHelper(_ path: String) {
-let manager = FileManager.default
-let currentPath = manager.currentDirectoryPath
 
-func crawl(_ path: String) {
-  // check this path is empty or not
-  if let currentPath = currentPath else {
-    
-    
-    
-
-}
-
-
-
-  let dir = try? manager.contentsOfDirectory(at: URL(fileURLWithPath: currentPath), includingPropertiesForKeys: [], options: .skipsHiddenFiles)
-
-  
-                                                                                    
-//
-//}
-
-
-
-//  for _ in 1...k {
-//    let randomCharacter = word.randomElement()!
-//    set.insert(String(randomCharacter))
-//    print(set)
-//  }
-//  // when stop
-//  if set.count == 0 {
-//    print(soFar)
-//  }
-//  // for all available choices
-//  for i in 0..<set.count {
-//    // choose one choice
-//    let c = set[i]
-//    combinationsHelper(set[0, i] + set[i + 1, set.count], k, soFar: soFar + c)
-//  }
-
-
-
-}

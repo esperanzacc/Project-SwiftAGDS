@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C75605627D6B10E008EE47B /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75605527D6B10E008EE47B /* BackTracking.swift */; };
+		6C75608627D95572008EE47B /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608527D95572008EE47B /* Sorting.swift */; };
+		6C75608927D9F242008EE47B /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608827D9F242008EE47B /* Searching.swift */; };
 		6CB9366627D0167C00C0537E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9366527D0167C00C0537E /* main.swift */; };
 		6CB9366E27D019A700C0537E /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9366D27D019A700C0537E /* Recursion.swift */; };
 		6CB9367127D01B4A00C0537E /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9367027D01B4A00C0537E /* String+DPStringTool.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		6C75605527D6B10E008EE47B /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
+		6C75608527D95572008EE47B /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		6C75608827D9F242008EE47B /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		6CB9366227D0167B00C0537E /* Swift - AGDS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift - AGDS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB9366527D0167C00C0537E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6CB9366D27D019A700C0537E /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C75608727D9F21B008EE47B /* SearchingSorting */ = {
+			isa = PBXGroup;
+			children = (
+				6C75608827D9F242008EE47B /* Searching.swift */,
+				6C75608527D95572008EE47B /* Sorting.swift */,
+			);
+			path = SearchingSorting;
+			sourceTree = "<group>";
+		};
 		6CB9365927D0167B00C0537E = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		6CB9366427D0167B00C0537E /* Swift - AGDS */ = {
 			isa = PBXGroup;
 			children = (
+				6C75608727D9F21B008EE47B /* SearchingSorting */,
 				6CB9366F27D01AF000C0537E /* Utils */,
 				6CB9366C27D0198C00C0537E /* Recursion */,
 				6CB9366527D0167C00C0537E /* main.swift */,
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C75608627D95572008EE47B /* Sorting.swift in Sources */,
 				6CB9367127D01B4A00C0537E /* String+DPStringTool.swift in Sources */,
 				6CB9367427D16E1900C0537E /* ExhaustiveSearch.swift in Sources */,
 				6CB9366E27D019A700C0537E /* Recursion.swift in Sources */,
+				6C75608927D9F242008EE47B /* Searching.swift in Sources */,
 				6C75605627D6B10E008EE47B /* BackTracking.swift in Sources */,
 				6CB9366627D0167C00C0537E /* main.swift in Sources */,
 			);

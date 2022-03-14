@@ -24,5 +24,24 @@ import Foundation
 //permutation("park")
 //permutationUnique("hellp")
 
-combinations("help", 3)
+//combinations("google", 2)
+//rollDice(6)
+//rollDiceSumNaive(2, 5)
+//print(times)
+//rollDiceSum(2, 5)
+//print(count)
+//rollDiceCombination(2, 4)
 
+//var arr = ["A", "B"]
+//if let i = linearSearch(arr, "B") {
+//  print(i)
+//} else {
+//  print("Target does not exist.")
+//}
+
+var numbers = [5, 1, 2, 3, 3, 7, 9]
+//print(bubbleSort(numbers, <))
+//print(selectionSort(numbers, <))
+//print(insertionSort(numbers, <))
+quickSort(&numbers, 0, 6)
+print(numbers)
