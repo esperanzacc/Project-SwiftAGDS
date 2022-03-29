@@ -39,9 +39,42 @@ import Foundation
 //  print("Target does not exist.")
 //}
 
-var numbers = [5, 1, 2, 3, 3, 7, 9]
+//var nums = Bag<Int>()
+//nums.add(item: 1)
+//nums.add(item: 2)
+//nums.add(item: 3)
+//
+//for item in nums {
+//  print(item)
+//
+//}
+//
+//print(nums)
+
+
+//var numbers = [5, 1, 2, 3, 3, 7, 9]
 //print(bubbleSort(numbers, <))
 //print(selectionSort(numbers, <))
 //print(insertionSort(numbers, <))
-quickSort(&numbers, 0, 6)
-print(numbers)
+//quickSort(&numbers, 0, 6)
+//print(numbers)
+//adjacencyMartixRepresentation()
+//adjacencyListRepresentation()
+//adjacencyListWeightedRepresentation()
+//adjacencyListBFS()
+
+
+//treeTraversals()
+var nums = Queue<Int>()
+nums.enqueue(item: 6)
+nums.enqueue(item: 5)
+nums.enqueue(item: 6)
+nums.dequeue()
+print(nums.dequeue()!)
+print(nums.isEmpty())
+
+
+for item in nums {
+  print(item)
+}
+print(nums)
