@@ -79,14 +79,13 @@ import Foundation
 //}
 //print(nums)
 //town()
-//7
-//0110100
-//0110101
-//1110101
-//0000111
-//0100000
-//0111110
-//0111000
 //topologicalSort()
 //print(canFinish(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
-print(findOrder(2, [[1, 0]]))
+//print(findOrder(2, [[1, 0]]))
+
+findMiniDays()
+//6 4
+//0 0 0 0 0 0
+//0 0 0 0 0 0
+//0 0 0 0 0 0
+//0 0 0 0 0 1

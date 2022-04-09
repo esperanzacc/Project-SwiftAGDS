@@ -19,7 +19,7 @@ func maze() {
   
   let firstLine = readLine()!.split(separator: " ").map { Int($0)! }
   let height = firstLine[0]
-  let width = firstLine[0]
+  let width = firstLine[1]
   
   var check = [[Bool]](repeating: [Bool](repeating: false, count: width), count: height)
   var grid = [[Int]]()
