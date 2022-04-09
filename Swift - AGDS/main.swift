@@ -65,16 +65,28 @@ import Foundation
 
 
 //treeTraversals()
-var nums = Queue<Int>()
-nums.enqueue(item: 6)
-nums.enqueue(item: 5)
-nums.enqueue(item: 6)
-nums.dequeue()
-print(nums.dequeue()!)
-print(nums.isEmpty())
-
-
-for item in nums {
-  print(item)
-}
-print(nums)
+//var nums = Queue<Int>()
+//nums.enqueue(item: 6)
+//nums.enqueue(item: 5)
+//nums.enqueue(item: 6)
+//nums.dequeue()
+//print(nums.dequeue()!)
+//print(nums.isEmpty())
+//
+//
+//for item in nums {
+//  print(item)
+//}
+//print(nums)
+//town()
+//7
+//0110100
+//0110101
+//1110101
+//0000111
+//0100000
+//0111110
+//0111000
+//topologicalSort()
+//print(canFinish(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
+print(findOrder(2, [[1, 0]]))
