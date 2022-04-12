@@ -83,9 +83,11 @@ import Foundation
 //print(canFinish(4, [[1, 0], [2, 0], [3, 1], [3, 2]]))
 //print(findOrder(2, [[1, 0]]))
 
-findMiniDays()
+//findMiniDays()
 //6 4
 //0 0 0 0 0 0
 //0 0 0 0 0 0
 //0 0 0 0 0 0
 //0 0 0 0 0 1
+
+buildShortestWay()
