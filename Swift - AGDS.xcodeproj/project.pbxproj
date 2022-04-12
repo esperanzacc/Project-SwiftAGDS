@@ -90,6 +90,7 @@
 		6C1B724D27E8FA5000669120 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				6CBFCC6728063D5A00CFEAAF /* FloodFillAssignments */,
 				6CBFCC5F2801286400CFEAAF /* TopologicalAssignments */,
 				6CBFCC5827FFF38000CFEAAF /* TopologicalSort */,
 				6CBFCC5327FCDE2600CFEAAF /* FloodFill */,
@@ -183,8 +184,6 @@
 			children = (
 				6CBFCC5427FCDE3900CFEAAF /* Town.swift */,
 				6CBFCC5627FF5DF000CFEAAF /* Maze.swift */,
-				6CBFCC6028012DE600CFEAAF /* TomatoFarm.swift */,
-				6CBFCC622801DB4600CFEAAF /* Bridges.swift */,
 			);
 			path = FloodFill;
 			sourceTree = "<group>";
@@ -212,6 +211,15 @@
 				6CBFCC642806163A00CFEAAF /* IndexPriorityQueue.swift */,
 			);
 			path = DataStructure2;
+			sourceTree = "<group>";
+		};
+		6CBFCC6728063D5A00CFEAAF /* FloodFillAssignments */ = {
+			isa = PBXGroup;
+			children = (
+				6CBFCC6028012DE600CFEAAF /* TomatoFarm.swift */,
+				6CBFCC622801DB4600CFEAAF /* Bridges.swift */,
+			);
+			path = FloodFillAssignments;
 			sourceTree = "<group>";
 		};
 		6CE02B5D27E0DCB8002B161D /* DataStructures */ = {
