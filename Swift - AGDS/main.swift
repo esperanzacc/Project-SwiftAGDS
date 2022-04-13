@@ -90,4 +90,5 @@ import Foundation
 //0 0 0 0 0 0
 //0 0 0 0 0 1
 
-buildShortestWay()
+//buildShortestWay()
+

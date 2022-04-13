@@ -27,6 +27,7 @@
 		6CBFCC6128012DE600CFEAAF /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFCC6028012DE600CFEAAF /* TomatoFarm.swift */; };
 		6CBFCC632801DB4700CFEAAF /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFCC622801DB4600CFEAAF /* Bridges.swift */; };
 		6CBFCC652806163C00CFEAAF /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFCC642806163A00CFEAAF /* IndexPriorityQueue.swift */; };
+		6CBFCC6928077C6900CFEAAF /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CBFCC6828077C6700CFEAAF /* UF.swift */; };
 		6CDB3F4B27F10E7C00348476 /* Bipartite Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB3F4A27F10E7C00348476 /* Bipartite Graph.swift */; };
 		6CDB3F4D27F27DA100348476 /* TreeTraversals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB3F4C27F27DA100348476 /* TreeTraversals.swift */; };
 		6CDB3F6727F3884300348476 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB3F6627F3884300348476 /* Stack.swift */; };
@@ -69,6 +70,7 @@
 		6CBFCC6028012DE600CFEAAF /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
 		6CBFCC622801DB4600CFEAAF /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		6CBFCC642806163A00CFEAAF /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
+		6CBFCC6828077C6700CFEAAF /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		6CDB3F4A27F10E7C00348476 /* Bipartite Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bipartite Graph.swift"; sourceTree = "<group>"; };
 		6CDB3F4C27F27DA100348476 /* TreeTraversals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversals.swift; sourceTree = "<group>"; };
 		6CDB3F6627F3884300348476 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				6CBFCC642806163A00CFEAAF /* IndexPriorityQueue.swift */,
+				6CBFCC6828077C6700CFEAAF /* UF.swift */,
 			);
 			path = DataStructure2;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				6C75608627D95572008EE47B /* Sorting.swift in Sources */,
 				6CB9367127D01B4A00C0537E /* String+DPStringTool.swift in Sources */,
 				6CB9367427D16E1900C0537E /* ExhaustiveSearch.swift in Sources */,
+				6CBFCC6928077C6900CFEAAF /* UF.swift in Sources */,
 				6CDB3F4B27F10E7C00348476 /* Bipartite Graph.swift in Sources */,
 				6CBFCC5C28000B5600CFEAAF /* CourseSchedule.swift in Sources */,
 				6CB9366E27D019A700C0537E /* Recursion.swift in Sources */,
