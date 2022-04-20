@@ -93,4 +93,6 @@ import Foundation
 //leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2)
 //print(canAttendMeetings([[7, 10], [2, 4], [15, 20]]))
 //print(minimumSum(4009))
-print(balancedStringSplit("LLLLRRRR"))
+//print(balancedStringSplit("LLLLRRRR"))
+
+maximum69Number(9669)

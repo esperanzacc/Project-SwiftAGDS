@@ -19,6 +19,8 @@
 		6C611989280FFC7600E7D227 /* MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C611988280FFC7600E7D227 /* MeetingRooms.swift */; };
 		6C61198B28100BE400E7D227 /* MiniSumOfFourDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */; };
 		6C61198D2810133F00E7D227 /* SpiltStringInBalanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */; };
+		6C61198F2810932F00E7D227 /* Max69Num.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61198E2810932F00E7D227 /* Max69Num.swift */; };
+		6C6119912810964300E7D227 /* DI String Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6119902810964300E7D227 /* DI String Match.swift */; };
 		6C75605627D6B10E008EE47B /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75605527D6B10E008EE47B /* BackTracking.swift */; };
 		6C75608627D95572008EE47B /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608527D95572008EE47B /* Sorting.swift */; };
 		6C75608927D9F242008EE47B /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608827D9F242008EE47B /* Searching.swift */; };
@@ -67,6 +69,8 @@
 		6C611988280FFC7600E7D227 /* MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRooms.swift; sourceTree = "<group>"; };
 		6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniSumOfFourDigits.swift; sourceTree = "<group>"; };
 		6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiltStringInBalanced.swift; sourceTree = "<group>"; };
+		6C61198E2810932F00E7D227 /* Max69Num.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Max69Num.swift; sourceTree = "<group>"; };
+		6C6119902810964300E7D227 /* DI String Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DI String Match.swift"; sourceTree = "<group>"; };
 		6C75605527D6B10E008EE47B /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		6C75608527D95572008EE47B /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		6C75608827D9F242008EE47B /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -136,7 +140,7 @@
 			path = Trees;
 			sourceTree = "<group>";
 		};
-		6C61197F280E791600E7D227 /* Greedy Algorithm */ = {
+		6C61197F280E791600E7D227 /* GreedyLeetcodeAGPros */ = {
 			isa = PBXGroup;
 			children = (
 				6C611980280E795B00E7D227 /* TwoCitiesScheduling.swift */,
@@ -146,8 +150,10 @@
 				6C611988280FFC7600E7D227 /* MeetingRooms.swift */,
 				6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */,
 				6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */,
+				6C61198E2810932F00E7D227 /* Max69Num.swift */,
+				6C6119902810964300E7D227 /* DI String Match.swift */,
 			);
-			path = "Greedy Algorithm";
+			path = GreedyLeetcodeAGPros;
 			sourceTree = "<group>";
 		};
 		6C75608727D9F21B008EE47B /* SearchingSorting */ = {
@@ -178,7 +184,7 @@
 		6CB9366427D0167B00C0537E /* Swift - AGDS */ = {
 			isa = PBXGroup;
 			children = (
-				6C61197F280E791600E7D227 /* Greedy Algorithm */,
+				6C61197F280E791600E7D227 /* GreedyLeetcodeAGPros */,
 				6CBFCC662806164600CFEAAF /* DataStructure2 */,
 				6C1B725127E91A6B00669120 /* Trees */,
 				6C1B724D27E8FA5000669120 /* Graph */,
@@ -350,11 +356,13 @@
 				6C47ABA927E97119004F849A /* DFS.swift in Sources */,
 				6C47ABB127E9B223004F849A /* ConnectedComponents.swift in Sources */,
 				6CBFCC5A27FFF3A100CFEAAF /* TopologicalSort.swift in Sources */,
+				6C61198F2810932F00E7D227 /* Max69Num.swift in Sources */,
 				6CE02B5F27E0DCE2002B161D /* Bag.swift in Sources */,
 				6CB9366627D0167C00C0537E /* main.swift in Sources */,
 				6CBFCC6128012DE600CFEAAF /* TomatoFarm.swift in Sources */,
 				6C611987280FD33500E7D227 /* TaskScheduler.swift in Sources */,
 				6CBFCC652806163C00CFEAAF /* IndexPriorityQueue.swift in Sources */,
+				6C6119912810964300E7D227 /* DI String Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
