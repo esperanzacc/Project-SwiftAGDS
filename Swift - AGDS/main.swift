@@ -84,11 +84,6 @@ import Foundation
 //print(findOrder(2, [[1, 0]]))
 
 //findMiniDays()
-//6 4
-//0 0 0 0 0 0
-//0 0 0 0 0 0
-//0 0 0 0 0 0
-//0 0 0 0 0 1
 
 //buildShortestWay()
 
@@ -96,4 +91,6 @@ import Foundation
 //canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2])
 //partitionLabels("ababcbacadefegdehijhklij")
 //leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2)
-print(canAttendMeetings([[7, 10], [2, 4], [15, 20]]))
+//print(canAttendMeetings([[7, 10], [2, 4], [15, 20]]))
+//print(minimumSum(4009))
+print(balancedStringSplit("LLLLRRRR"))

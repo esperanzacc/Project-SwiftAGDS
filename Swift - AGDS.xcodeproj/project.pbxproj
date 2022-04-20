@@ -17,6 +17,8 @@
 		6C611985280FB09B00E7D227 /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C611984280FB09B00E7D227 /* PartitionLabels.swift */; };
 		6C611987280FD33500E7D227 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C611986280FD33400E7D227 /* TaskScheduler.swift */; };
 		6C611989280FFC7600E7D227 /* MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C611988280FFC7600E7D227 /* MeetingRooms.swift */; };
+		6C61198B28100BE400E7D227 /* MiniSumOfFourDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */; };
+		6C61198D2810133F00E7D227 /* SpiltStringInBalanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */; };
 		6C75605627D6B10E008EE47B /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75605527D6B10E008EE47B /* BackTracking.swift */; };
 		6C75608627D95572008EE47B /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608527D95572008EE47B /* Sorting.swift */; };
 		6C75608927D9F242008EE47B /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C75608827D9F242008EE47B /* Searching.swift */; };
@@ -63,6 +65,8 @@
 		6C611984280FB09B00E7D227 /* PartitionLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
 		6C611986280FD33400E7D227 /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		6C611988280FFC7600E7D227 /* MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingRooms.swift; sourceTree = "<group>"; };
+		6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniSumOfFourDigits.swift; sourceTree = "<group>"; };
+		6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiltStringInBalanced.swift; sourceTree = "<group>"; };
 		6C75605527D6B10E008EE47B /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		6C75608527D95572008EE47B /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		6C75608827D9F242008EE47B /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 				6C611984280FB09B00E7D227 /* PartitionLabels.swift */,
 				6C611986280FD33400E7D227 /* TaskScheduler.swift */,
 				6C611988280FFC7600E7D227 /* MeetingRooms.swift */,
+				6C61198A28100BE400E7D227 /* MiniSumOfFourDigits.swift */,
+				6C61198C2810133F00E7D227 /* SpiltStringInBalanced.swift */,
 			);
 			path = "Greedy Algorithm";
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				6CBFCC5527FCDE3900CFEAAF /* Town.swift in Sources */,
 				6CBFCC632801DB4700CFEAAF /* Bridges.swift in Sources */,
 				6C611989280FFC7600E7D227 /* MeetingRooms.swift in Sources */,
+				6C61198D2810133F00E7D227 /* SpiltStringInBalanced.swift in Sources */,
 				6C47ABA727E939A2004F849A /* AdjacancyList.swift in Sources */,
 				6C75608927D9F242008EE47B /* Searching.swift in Sources */,
 				6CDB3F6927F3886D00348476 /* Queue.swift in Sources */,
@@ -339,6 +346,7 @@
 				6C1B725027E8FA8100669120 /* AdjacencyMatrix.swift in Sources */,
 				6C75605627D6B10E008EE47B /* BackTracking.swift in Sources */,
 				6CBFCC5727FF5DF000CFEAAF /* Maze.swift in Sources */,
+				6C61198B28100BE400E7D227 /* MiniSumOfFourDigits.swift in Sources */,
 				6C47ABA927E97119004F849A /* DFS.swift in Sources */,
 				6C47ABB127E9B223004F849A /* ConnectedComponents.swift in Sources */,
 				6CBFCC5A27FFF3A100CFEAAF /* TopologicalSort.swift in Sources */,
