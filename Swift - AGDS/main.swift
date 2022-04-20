@@ -92,3 +92,8 @@ import Foundation
 
 //buildShortestWay()
 
+//twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]])
+//canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2])
+//partitionLabels("ababcbacadefegdehijhklij")
+//leastInterval(["A","A","A","A","A","A","B","C","D","E","F","G"], 2)
+print(canAttendMeetings([[7, 10], [2, 4], [15, 20]]))
