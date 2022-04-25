@@ -95,4 +95,9 @@ import Foundation
 //print(minimumSum(4009))
 //print(balancedStringSplit("LLLLRRRR"))
 
-maximum69Number(9669)
+//maximum69Number(9669)
+//diStringMatch("DDI")
+
+//print(minCostConnectPoints([[0,0],[2,2],[3,10],[5,2],[7,0]]))
+print(minCostFlow())
+
