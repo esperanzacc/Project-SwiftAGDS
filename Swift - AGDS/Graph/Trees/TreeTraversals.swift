@@ -22,7 +22,6 @@ func inOrder(_ node: Int) {
   inOrder(tree[node][0])
   print(Character(UnicodeScalar(node + 65)!), terminator: "")
   inOrder(tree[node][1])
-  
 }
 
 func postOrder(_ node: Int) {

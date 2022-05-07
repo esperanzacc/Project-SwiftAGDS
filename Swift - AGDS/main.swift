@@ -7,16 +7,14 @@
 
 import Foundation
 
-//print(factorial(n: 5))
-//
+//print(factorial(n: 5)
 //print(isPalindrome("madam"))
-//print(isPalindrome("esperanza"))
-//
+//print(isPalindrome("esperanza")
+
 //printBinary(52)
-//print()
 //printBinary(42)
-//print()
-//
+
+
 //reverseLines(0)
 //printBinaryExhaustive(4)
 //printDecimal(3)
@@ -46,9 +44,7 @@ import Foundation
 //
 //for item in nums {
 //  print(item)
-//
 //}
-//
 //print(nums)
 
 
@@ -99,5 +95,14 @@ import Foundation
 //diStringMatch("DDI")
 
 //print(minCostConnectPoints([[0,0],[2,2],[3,10],[5,2],[7,0]]))
-print(minCostFlow())
-
+//print(minCostFlow())
+//print(networkDelayTime([[1,2,1]], 2, 2))
+//timeMachine()
+//print(findTheCity(4, [[0,1,3],[1,2,1],[1,3,4],[2,3,1]], 4))
+//print(canJump([3,2,1,0,4]))
+//lengthOfLIS2([10,9,2,5,3,7,101,18])
+//print(pokemon())
+//print(happy())
+//print(isPalindromeHelper())
+//:)
+print(duplicate())

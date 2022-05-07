@@ -56,7 +56,7 @@ public final class MST {
         visited[edge.v] = true
         mstEdges.append(CompEdge(u: edge.u, v: edge.v, w: edge.w))
         for e in graph[edge.v] {
-          pq.enqueue(CompEdge(u: edge.u, v: e.v, w: e.w))
+          pq.enqueue(CompEdge(u: edge.v, v: e.v, w: e.w))
         }
       }
     }

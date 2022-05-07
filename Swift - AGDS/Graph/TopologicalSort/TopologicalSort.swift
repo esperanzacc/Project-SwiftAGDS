@@ -15,8 +15,7 @@ func topologicalSort() {
   
   var adj = [[Int]](repeating: [Int](), count: N + 1)
   var indegrees = [Int](repeating: 0, count: N + 1)
-//  print(indegrees)
-//
+  
   for _ in 0..<M { // M edges
     let edge = readLine()!.split(separator: " ").map { Int($0)! }
 //    print(edge)

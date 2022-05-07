@@ -20,7 +20,7 @@ func diStringMatch(_ s: String) -> [Int] {
   }
   print(perm)
   
-  for var i in 0..<string.count {
+  for i in 0..<string.count {
     if string[i] == "I" {
       result.append(perm[0])
       print(result)

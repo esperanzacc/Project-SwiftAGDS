@@ -72,10 +72,10 @@ public struct UF {
   /// - Parameters:
   ///   - p: one element
   ///   - q: the other element
-  public mutating func union(_ p: Int, _ q: Int) {
+  public mutating func union(_ p: Int, _ q: Int) -> Bool {
     let rootP = find(p)
     let rootQ = find(q)
-    guard rootP != rootQ else { return } // already connected
+    guard rootP != rootQ else { return false } // already connected
     
     // make smaller root point to larger one
     if size[rootP] < size[rootQ] {
@@ -86,6 +86,7 @@ public struct UF {
       size[rootP] += size[rootQ]
     }
     count -= 1
+    return true
   }
   
   private func validate(_ p: Int) throws {

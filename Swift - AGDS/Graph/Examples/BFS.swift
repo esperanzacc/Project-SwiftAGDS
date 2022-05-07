@@ -36,9 +36,9 @@ func adjacencyListBFS() {
   visited[1] = true
   
   while !queue.isEmpty() {
-    let u = queue.dequeue()!  // take out Queuejkl
+    let u = queue.dequeue()!  // take out Queue
     print(u)
-    for (v, _) in adjList[u] {
+    for (v, w) in adjList[u] {
       if !visited[v] { // check visit or not
         queue.enqueue(item: v)
         visited[v] = true

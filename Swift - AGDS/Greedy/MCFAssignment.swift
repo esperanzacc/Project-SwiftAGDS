@@ -11,72 +11,82 @@ import Foundation
 // 3. if there are some inactive pipes not in the MST, which means might swap those
 // 4. the number of inactive pipes == the number of days you need
 
-func minCostFlow() -> Int {
-  // Input [4, 4, 0] -> 4 bulildings, next 4 lines contain three integers Ai, Bi, and Ci, 0 enhancer
+func minCostFlow() {
   let firstLine = readLine()!.split(separator: " ").map { Int($0)! }
-//  print(firstLine)
+  let (N, M, D) = (firstLine[0], firstLine[1], firstLine[2])
   
-//  let currentUsedNum = firstLine[1]
-  
-  var pipes = [(building1: Int, building2: Int, cost: Int)]()
-  var currentPipes = [(building1: Int, building2: Int, cost: Int)]()
-  var mstPipes =  [(building1: Int, building2: Int, cost: Int)]()
-  var costPipes = [(building1: Int, building2: Int, cost: Int)]()
-  
-  for _ in 0..<firstLine[1] {
-    let line = readLine()!.split(separator: " ").map { Int($0)! }
-    pipes.append((line[0], line[1], line[2]))
+  var pipes = [Edge](unsafeUninitializedCapacity: M ) { (buffer, count) in
+    for i in 0..<M {
+      let line = readLine()!.split(separator: " ").map { Int($0)! }
+      if i < N - 1 {
+        buffer[i] = Edge(line[0], line[1], line[2], 1)
+      } else {
+        buffer[i] = Edge(line[0], line[1], line[2], 0)
+      }
+    }
+    count = M
   }
   
-  for i in 0..<firstLine[0]-1 {
-    currentPipes.append(pipes[i])
-  }
-
   pipes.sort { $0.cost < $1.cost }
-  currentPipes.sort { $0.cost < $1.cost }
-  print(pipes)
 
-  var uf = UF(firstLine[0] + 1)
-  print(uf)
-  for pipe in pipes {   // O(E)
-    if uf.connected(pipe.building1, pipe.building2) { continue }
-    mstPipes.append(pipe)
-    uf.union(pipe.building1, pipe.building2)
+  var uf = UF(N + 1)
+  var (days, count, max, i) = (0, 0, 0, 0)
+  
+  // get MST -> optimized plan
+  while i < M {
+    if count == N - 1 { break }
+    let pipe = pipes[i]
+    if uf.union(pipe.u, pipe.v) {
+      count += 1
+      max = pipe.cost
+      if pipe.active == 0 { days += 1}
+    }
+    i += 1
   }
-
-  var days = 0
-  print("currentPipes: \(currentPipes)")
-  print("mstPipes: \(mstPipes)")
-
-  for pipe in currentPipes {
-    let has_pipe = mstPipes.contains(where: { $0 == pipe })
-    if has_pipe {
-      costPipes.append(pipe)
-      days += 0
-    } else {
-      days += 1
+  
+  // either days or days - 1 is the answer.
+  // check if we can use enhancer to reduce one day.
+  // want to replace the inactive pipe (heaviest) with an active pipe with same or less MST cost.
+  if pipes[i - 1].active == 0 {
+    var uf2 = UF(N + 1) // another Kruskal's algorithm since the replaced active pipe should form a MST.
+    for e in pipes {
+      if !uf2.connected(e.u, e.v) {
+        if e.cost < max || (e.cost == max && e.active == 1) {
+          // all pipes that were part of the optimized plan should be included.
+          uf2.union(e.u, e.v)
+        } else if e.active == 1 && e.cost <= D {
+          // active pipe that has the cost less than or equal to the enhancer.
+          // because the MST cost has to be less than or equal to the previous optimized plan.
+          // (otherwise, there's no reason to replace.)
+          days -= 1
+          break
+        }
+      }
     }
   }
-  print(costPipes)
-  
-  var enhacePipe = costPipes.last!
-  enhacePipe.cost = max(0, enhacePipe.cost - firstLine[2])
-  print(enhacePipe)
-  
-  for var pipe in mstPipes {
-    if pipe.building1 == enhacePipe.building1 && pipe.building2 == enhacePipe.building2 {
-      pipe = enhacePipe
-      mstPipes.removeLast()
-      mstPipes.append(enhacePipe)
-    }
-    print(mstPipes)
-  }
+  print(days)
 
-  let cost = mstPipes.map { $0.cost }.reduce(0, +)
-  print(cost)
-  
-  return days == 0 ? 0 : days
 }
+
+public struct Edge: Comparable {
+  private(set) var u: Int
+  private(set) var v: Int
+  private(set) var cost: Int
+  private(set) var active: Int
+  
+  init(_ u: Int, _ v: Int, _ weight: Int, _ active: Int) {
+    self.u = u
+    self.v = v
+    self.cost = weight
+    self.active = active
+  }
+  
+  public static func < (lhs: Edge, rhs: Edge) -> Bool {
+    if lhs.cost != rhs.cost { return lhs.cost < rhs.cost }
+    return lhs.active > rhs.active
+  }
+}
+
  
 //4 4 0
 //1 2 1
